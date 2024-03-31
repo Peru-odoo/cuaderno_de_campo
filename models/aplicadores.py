@@ -4,10 +4,18 @@ from odoo import models, api, fields
 class cc_aplicadores(models.Model):
     _name = 'cc.aplicadores'
     
-    name = fields.Char(
-        string='Nombre y apellidos',
+    
+    nombre = fields.Char(
+        string='Nombre',
         required=True,
-        help='Escriba el nombre y apellidos de la persona inscrita en el ROPO'
+        help='Escriba el nombre de la persona inscrita en el ROPO'
+    )
+    
+    
+    name = fields.Char(
+        string='Apellidos',
+        required=True,
+        help='Escriba los apellidos de la persona inscrita en el ROPO'
         
     )
     
@@ -31,7 +39,20 @@ class cc_aplicadores(models.Model):
             ('4', 'Piloto')
         ]
     )
-
+    
     asesor = fields.Boolean(
         string='Asesor',
+        help='Indica si la persona que realiza el tratamiento también tiene puede realizar las labores de asesoria'
     )
+    
+    tratamiento = fields.One2many(
+        comodel_name='cc.tratamientos',
+        inverse_name='aplicador',
+        string='Tratamientos'
+    )
+    
+    asesoria = fields.One2many(
+        comodel_name='cc.tratamientos',
+        inverse_name='asesor'
+    )
+    

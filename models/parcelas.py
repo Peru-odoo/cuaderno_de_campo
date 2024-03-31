@@ -137,3 +137,5 @@ class parcelas(models.Model):
         string='Cultivos',
         required=False
     )
+    
+    

@@ -8,6 +8,7 @@
             <field name="arch" type="xml">
                 <tree string="">
                     <field name="name"></field>
+                    <field name="nombre" />
                     <field name="numero_inscripcion"></field>
                     <field name="dni_nif"></field>
                     <field name="carnet"></field>
@@ -25,6 +26,7 @@
                     <sheet>
                         <group>
                             <field name="name"></field>
+                            <field name="nombre" />
                             <field name="numero_inscripcion"></field>
                             <field name="dni_nif"></field>
                             <field name="carnet"></field>
@@ -41,13 +43,6 @@
             <field name="res_model">cc.aplicadores</field>
             <field name="view_mode">tree,form</field>
         </record>
-
-        <!-- Elementos de menú -->
-        <!-- Entrada principal de menú -->
-        <menuitem id="menu_cuaderno_campo" name="Cuaderno de Campo"/>
-
-        <!-- Entradas secundarias de menú -->
-        <menuitem id="menu_cc_aplicadores_list" name="Lista de Aplicadores" action="action_cc_aplicadores" parent="menu_cuaderno_campo"/> 
 
     </data>
 </odoo>

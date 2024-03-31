@@ -32,6 +32,11 @@ class cultivo(models.Model):
         string='Maquinaria de tiro',
         required=False
     )
+    maquinaria_siembra = fields.Many2one(
+        'cc.maquinaria',
+        string='Maquinaria de siembra',
+        required=False
+    )
 
     fecha_siembra = fields.Date(
         string='Fecha de siembra',
