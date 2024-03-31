@@ -7,4 +7,3 @@ from . import fitosanitario
 from . import maquinaria
 from . import parcelas
 from . import variedades
-from . import tratamientos

@@ -1,20 +1,20 @@
 from odoo import models, api, fields
 
+    
 class cc_fitosanitario(models.Model):
     _name = 'cc.fitosanitario'
-    _description = 'CC Fitosanitario'
-        
-    name = fields.Many2one(
-        string='Nombre',
-        comodel_name='product.template',
-        ondelete='restrict',
-    )
-      
+       
     num_registro = fields.Char(
         string='Nº Registro',
         required=True,
         help = 'Nº de registro del fitosanitario'
     )  
+    
+    name = fields.Char(
+        string='Nombre',
+        required=True,
+        help = 'Nombre comercial'
+    )
        
     titular = fields.Char(
         string='titular',

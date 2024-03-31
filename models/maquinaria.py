@@ -55,21 +55,21 @@ class cc_maquinaria(models.Model):
             ('2', 'Desfavorable')
         ],
     )
-    
+    '''
     tratamiento = fields.One2many(
-        comodel_name='cc.tratamientos',
+        comodel_name='cc.tratamiento',
         inverse_name='maquinaria_1',
         string='Maquinaria 1',
         required=False
     )
 
     tratamiento_2 = fields.One2many(
-        comodel_name='cc.tratamientos',
+        comodel_name='cc.tratamiento',
         inverse_name='maquinaria_2',
         string='Maquinaria 2',
         required=False
     )
-    
+    '''
     cultivo = fields.One2many(
         'cc.cultivos',
         'maquinaria',

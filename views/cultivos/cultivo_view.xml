@@ -57,29 +57,6 @@
                                     </field>
                                 </tree>
                             </field>
-                            <field name="maquinaria_siembra">
-                                <tree>
-                                    <field name="name"/>
-                                    <field name="marca"/>
-                                    <field name="modelo"/>
-                                    <field name="tipo"/>
-                                    <field name="estado"/>
-                                    <field name="fecha_adquisicion"/>
-                                    <field name="fecha_inspeccion"/>
-                                    <field name="cultivo"/>
-                                    <field name="cultivo">
-                                        <tree>
-                                            <field name="name"/>
-                                            <field name="parcela"/>
-                                            <field name="variedad"/>
-                                            <field name="superficie_cultivada"/>
-                                            <field name="fecha_siembra"/>
-                                            <field name="fecha_cosecha"/>
-                                            <field name="cosecha_estimada"/>
-                                        </tree>
-                                    </field>
-                                </tree>
-                            </field>
                             <field name="fecha_siembra"/>
                             <field name="fecha_cosecha"/>
                             <field name="cosecha_estimada"/>
@@ -99,8 +76,6 @@
                     <field name="parcela"/>
                     <field name="variedad"/>
                     <field name="superficie_cultivada"/>
-                    <field name="maquinaria" />
-                    <field name="maquinaria_siembra" />
                     <field name="fecha_siembra"/>
                     <field name="fecha_cosecha"/>
                     <field name="cosecha_estimada"/>
